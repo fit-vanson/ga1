@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\DashboardController;
@@ -30,6 +31,20 @@ Route::get('/', [DashboardController::class,'index'])->name('home-index')->middl
 
 //Auth::routes(['verify' => true]);
 
+Route::get('/clear',function (){
+    echo  Artisan::call('optimize:clear');
+    echo  Artisan::call('cache:clear');
+    echo  Artisan::call('config:cache');
+    echo  Artisan::call('route:cache');
+});
+Route::get('/link',function (){
+    echo  Artisan::call('storage:link');
+});
+
+Route::get('/phpinfo',function (){
+
+    echo phpinfo();
+});
 
 
 Route::group(['prefix'=>'login','middleware'=>'CheckUser'], function (){
