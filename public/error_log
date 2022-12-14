@@ -1,0 +1,2 @@
+[21-Jul-2021 02:19:22 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.21. in /home2/roomvietmmo/public_html/vendor/composer/platform_check.php on line 24
+[21-Jul-2021 02:20:06 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.21. in /home2/roomvietmmo/public_html/vendor/composer/platform_check.php on line 24

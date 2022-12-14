@@ -1,0 +1,66 @@
+{
+  "menu": [
+    {
+      "name": "Dashboards",
+      "badgeClass": "badge badge-light-warning badge-pill ml-auto mr-1",
+      "icon": "home",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "/",
+          "name": "Home",
+          "icon": "circle",
+          "slug": "home-index"
+        }
+      ]
+    },
+    {
+      "navheader": "API",
+      "slug": ""
+    },
+
+    {
+      "name": "Google",
+      "icon": "file-text",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "api/admod/",
+          "name": "AdMod",
+          "icon": "circle",
+          "slug": "api-admod"
+        }
+
+      ]
+    },
+    {
+      "navheader": "User",
+      "slug": ""
+    },
+    {
+      "name": "User",
+      "icon": "user",
+      "slug": "",
+      "submenu": [
+        {
+          "url": "user/",
+          "name": "List",
+          "icon": "circle",
+          "slug": "user-index"
+        },
+        {
+          "url": "role/",
+          "name": "Role",
+          "icon": "circle",
+          "slug": "role-index"
+        },
+        {
+          "url": "permission/",
+          "name": "Permission",
+          "icon": "circle",
+          "slug": "permission-index"
+        }
+      ]
+    }
+  ]
+}
